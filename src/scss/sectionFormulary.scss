@@ -1,0 +1,91 @@
+@import "../scss/_variables.scss";
+
+.formulary__title {
+  h2 {
+    color: $color-gradinet;
+    font-size: 2.2rem;
+    border-bottom: 5px solid;
+  }
+}
+
+.formulary__paragraph {
+  p {
+    color: $color-graytwo;
+    font-size: 1.24rem;
+    font-weight: 500;
+  }
+}
+
+.form-title-paragraph {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.formulary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  margin: 0px auto;
+  border-radius: 3px;
+  background: $background;
+  width: 55.55rem;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  padding: 60px 30px;
+  box-shadow: 10px 10px 25px 10px #4b4b4b45;
+}
+
+.form__msg {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1rem;
+  width: 32rem;
+  max-width: 100%;
+  label {
+    color: #ffff;
+    font-size: 1.11rem;
+    font-weight: 500;
+  }
+  input {
+    border-radius: 5px;
+    padding: 5px 5px;
+    background-color: #ffff;
+    border: none;
+    outline: none;
+    &::placeholder {
+      color: rgb(172, 36, 199);
+    }
+  }
+}
+
+.send__message {
+  a {
+    color: #ffff;
+    background-color: $color-gradinet;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 500;
+    &:hover {
+      background-color: #ffff;
+      box-shadow: 6px 6px 0px $color-graytwo;
+      transition: all 0.3s;
+      color: $color-gradientTwo;
+    }
+  }
+}
+
+.social__workings {
+  ul {
+    display: flex;
+    gap: 4rem;
+  }
+}

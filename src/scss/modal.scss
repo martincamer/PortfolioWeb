@@ -1,0 +1,39 @@
+@import "../scss/_variables.scss";
+
+.modal__title {
+  border-bottom: 2px solid $color-gray;
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  padding: 20px;
+  h2 {
+    font-size: 2.2rem;
+    color: $color-gradientTwo;
+  }
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+}
+
+.button__modal {
+  display: flex;
+  gap: 3rem;
+  div {
+    a {
+      background-color: $color-gradientTwo;
+      color: #ffff;
+      padding: 10px 20px;
+      border-radius: 20px;
+      width: 100%;
+
+      &:hover {
+        background-color: $color-gray;
+        transition: all 0.3s;
+        box-shadow: 6px 6px 0px $color-gradientTwo;
+      }
+    }
+  }
+}

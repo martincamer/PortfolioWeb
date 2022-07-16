@@ -1,0 +1,82 @@
+@import "../scss/_variables.scss";
+
+///
+.content__one {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  gap: 1.2rem;
+  p {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: $color-gray;
+  }
+  span {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: $color-gradientTwo;
+  }
+  a {
+    background-color: $color-gradinet;
+    width: 30%;
+    text-align: center;
+    border-radius: 20px;
+    padding: 2px;
+    color: white;
+    font-size: 1.08rem;
+    font-weight: 600;
+    &:hover {
+      background-color: $color-gradientTwo;
+      color: white;
+      box-shadow: 5px 5px 0px $color-gray;
+      transition: all 0.3s;
+    }
+  }
+}
+
+.content__two {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 1000px) and (min-width: 722px) {
+    width: 60%;
+  }
+  @media (max-width: 1000px) {
+    align-items: flex-start;
+  }
+
+  .imageEffecto {
+    background-image: url("../assets/img/release/martincamer.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    max-width: 100%;
+    width: 100%;
+    height: 550px;
+    box-shadow: 16px -18px 0px $color-gradinet;
+    border-radius: 100%;
+    border: solid 5px $color-gradientTwo;
+  }
+
+  .imageEffecto:hover {
+    background-image: url("../assets/img/release/martincamerdos.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    max-width: 100%;
+    width: 100%;
+    height: 550px;
+    transition: all 1.3s;
+  }
+}

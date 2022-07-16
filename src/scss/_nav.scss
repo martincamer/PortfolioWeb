@@ -1,0 +1,128 @@
+///NAVBAR
+//NAVEGACION
+@import "../scss/_variables.scss";
+
+.nav__header {
+  display: flex;
+  gap: 2.5rem;
+  .nav__list {
+    ul {
+      display: flex;
+      gap: 4.1rem;
+    }
+    li {
+      position: relative;
+    }
+    li .home {
+      color: $color-gradientTwo;
+      border-bottom: 0.2rem solid;
+      &:hover {
+        color: $color-gradinet;
+        transition: all ease 0.8s;
+      }
+    }
+    li a::after {
+      content: "";
+      position: absolute;
+      background-color: $color-gradientTwo;
+      height: 3px;
+      width: 0;
+      left: 0;
+      bottom: 0px;
+      transition: 0.3s;
+    }
+
+    li a {
+      color: $color-gradinet;
+      &:hover {
+        color: $color-gradientTwo;
+      }
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+
+  .nav__icons {
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    display: none;
+  }
+}
+
+.logo__header {
+  h1 {
+    color: $color-gradinet;
+    font-size: 1.6rem;
+  }
+  span {
+    color: $color-gradientTwo;
+    font-size: 1.6rem;
+  }
+}
+
+.hamburguer-menu {
+  display: none;
+  @media screen and (max-width: 1000px) {
+    display: block;
+  }
+}
+
+.mobile__list {
+  display: flex;
+  flex-direction: column;
+  gap: 4.5rem;
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+    li a {
+      color: white;
+      font-size: 1.2rem;
+      &:hover {
+        color: $color-gradinet;
+        transition: all ease 0.8s;
+      }
+    }
+  }
+}
+
+.title__mobile {
+  line-height: 3rem;
+  text-align: center;
+  .span__one {
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+
+    .camer__span {
+      color: $color-gradientTwo;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+  }
+
+  .span__two {
+    color: $color-gradinet;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: white;
+    padding: 5px 15px;
+    box-shadow: 5px 5px 0px $color-gradientTwo;
+  }
+}
+
+.mobile__icons {
+  padding: 0px 10px;
+  ul {
+    display: flex;
+    gap: 4rem;
+  }
+}
