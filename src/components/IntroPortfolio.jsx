@@ -1,25 +1,23 @@
 import React from "react";
 import styled from "styled-components";
 import "../scss/_introPortfolio.scss";
-import TypeAnimation from "react-type-animation";
-
+import Typewriter from "typewriter-effect";
 export const IntroPortfolio = () => {
   return (
     <Section>
       <Content>
         <div className="content__one">
           <p>
-            <span>Hi</span>👋, My name is Martin and <br /> I am a {""}
-            <TypeAnimation
-              cursor={false}
-              sequence={[
-                "Front End Software Developer",
-                4000,
-                "Front End Software Developer",
-              ]}
-              wrapper="span"
+            <span>Hi</span>👋, My name is Martin, And I am a web design
+            enthusiast with a strong detail orientation and creativity.
+            <Typewriter
+              options={{
+                autoStart: true,
+                loop: true,
+                delay: 200,
+                strings: ["Software Developer FrontEnd."],
+              }}
             />
-            .
           </p>
 
           <a href="#">Contact</a>

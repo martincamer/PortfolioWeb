@@ -95,7 +95,7 @@ export const Navbar = () => {
         </div>
 
         <div className="hamburguer-menu" onClick={() => setClick(!click)}>
-          {click ? (
+          {!click ? (
             <FaBars style={{ fontSize: "1.26rem", color: "#e70faa" }} />
           ) : (
             <MdClose style={{ fontSize: "1.74rem", color: "#e70faa" }} />

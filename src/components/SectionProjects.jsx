@@ -2,6 +2,10 @@ import React from "react";
 import { FaCodeBranch, FaGithub } from "react-icons/fa";
 import styled from "styled-components";
 import "../scss/sectionProjects.scss";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 export const SectionProjects = () => {
   return (
     <Section>
